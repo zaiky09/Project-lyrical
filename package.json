@@ -1,0 +1,25 @@
+{
+  "name": "project-lyrical",
+  "version": "1.0.0",
+  "description": "Online application/platform allowing users to directly search for lyrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaiky09/Project-lyrical.git"
+  },
+  "keywords": [
+    "lyrics",
+    "search",
+    "music",
+    "karaoke"
+  ],
+  "author": "Zamil Mozamil Sheikh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zaiky09/Project-lyrical/issues"
+  },
+  "homepage": "https://github.com/zaiky09/Project-lyrical#readme"
+}
