@@ -14,9 +14,25 @@
             <div class="container-fluid">
                 <a class="navbar-brand text-light fs-1" href="#"><strong>Lyri</strong><em id="txt-color">Call</em></a> 
             </div>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div id="login-form">
+                <h1>Login</h1>
+                <ul id="login-list">
+                    <li><input class="txt" type="text" placeholder="username"></li>
+                    <li><input class="txt" type="password" placeholder="password"></li>
+                    <p><input type="checkbox">Remember me</p>
+                    <li><input class="button" type="button" value="Login"></li>
+                </ul>
+                <a href="#">Forget password</a><br>
+                <a href="#">Sign Up</a>
+            </div>
         </nav>
         <header>
-            <h1>LyriCall</h1>
+            <h1>Lyri<em id="txt-color">Call</em></h1>
 
             <form id="form">
                 <input type="text" id="search" placeholder="Enter song/artist name"/>
