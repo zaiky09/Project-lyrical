@@ -37,10 +37,20 @@ header {
     background-position: center center;
     color: #fff;
     display: flex;
-    flex-direction: row;align-items: center;
+    flex-direction: column;align-items: center;
     justify-content: center;
     padding: 100px 0;
     position: relative;
+}
+
+head:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
 }
 
 header * {
