@@ -12,6 +12,12 @@ body {
     margin: 0;
 }
 
+.intro-txt {
+    font-size: 5rem;
+    justify-content: center;
+    color: #fff;
+}
+
 button {
     cursor: pointer
 }

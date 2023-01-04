@@ -47,7 +47,7 @@ function showData(data) {
   
   //get prev and next songs
   async function getMoreSongs(url) {
-    const res = await fetch(`http://localhost:3000/posts${url}`);
+    const res = await fetch(`https://api.lyrics.ovh${url}`);
     const data = await res.json();
   
     showData(data);
