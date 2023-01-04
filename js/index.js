@@ -1,9 +1,15 @@
-const from = document.getElementById('form');
+//DOM content Loaded event listener
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+const form = document.getElementById('form');
 const search = document.getElementById('search');
 const result = document.getElementById('result');
 const more = document.getElementById('more');
+const login = document.getElementsByClassName('button');
 
-const apiURL = 'https://api.lyrics.ovh';
+const apiURL = 'https://lyricsovh.docs.apiary.io/';
 
 //search by song or artist
 async function searchSongs(term) {
@@ -47,7 +53,7 @@ function showData(data) {
   
   //get prev and next songs
   async function getMoreSongs(url) {
-    const res = await fetch(`https://api.lyrics.ovh${url}`);
+    const res = await fetch(`https://lyricsovh.docs.apiary.io/${url}`);
     const data = await res.json();
   
     showData(data);
@@ -71,8 +77,8 @@ function showData(data) {
   
     more.innerHTML = "";
   }
-  
-  form.addEventListener("submit", (e) => {
+  // Form event listener
+  form.addEventListener("click", (e) => {
     e.preventDefault();
   
     const searchTerm = search.value.trim();
@@ -84,7 +90,7 @@ function showData(data) {
     }
   });
   
-  // Get lyrics button click
+  // Get lyrics button click event listener
   result.addEventListener("click", (e) => {
     const clickedEl = e.target;
   
@@ -95,3 +101,4 @@ function showData(data) {
       getLyrics(artist, songTitle);
     }
   });
+})
